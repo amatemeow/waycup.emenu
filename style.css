@@ -76,6 +76,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex: 1 0 33%;
     justify-content: space-evenly;
 }
 
