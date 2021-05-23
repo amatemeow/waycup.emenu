@@ -2,7 +2,7 @@ html {
     min-width: 100%;
     margin: 0;
     font-family: Roboto;
-    background-color: #313131;
+    background-color: #151515;
 }
 
 body {
@@ -68,7 +68,7 @@ header {
 .menuItem {
     display: flex;
     flex-direction: column;
-    background-color: #28BC27;
+    background-color: #7FAE4E;
     border-radius: 5px;
     padding: 5px;
 }
@@ -94,8 +94,8 @@ header {
 }
 
 .itemDescription {
-    background-color: black;
-    color: white;
+    background-color: #151515;
+    color: lightgrey;
     border-radius: 5px;
     margin-top: 1em;
     padding: 10px;
