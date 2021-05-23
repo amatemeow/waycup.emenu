@@ -1,0 +1,111 @@
+html {
+    min-width: 100%;
+    margin: 0;
+    font-family: Roboto;
+    background-color: #313131;
+}
+
+body {
+    margin: inherit;
+    width: inherit;
+}
+
+header {
+    padding: 5px;
+    margin: inherit;
+    width: inherit;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    background-color: #fc0;
+    border-radius: 5px;
+    /*box-shadow: 0 1px 5px 0 black;*/
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo img{
+    max-width: 7em;
+}
+
+.title {
+    text-wrap: normal;
+}
+
+.title h1 {
+    font-size: x-large;
+}
+
+.title h2 {
+    font-size: larger;
+    font-weight: lighter;
+}
+
+.divider {
+    width: 0.5px;
+    background-color: black;
+    margin: 1em;
+    border: 0.5px solid black;
+    border-radius: 50px;
+    opacity: 0.7;
+}
+
+.mainContainer {
+    width: inherit;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    background-color: #28BC27;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.itemMain {
+    display: flex;
+    flex-direction: row;
+}
+
+.itemImage img {
+    max-width: 10em;
+    border-radius: 5px;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+
+.itemName {
+    
+}
+
+.itemDescription {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 1em;
+    padding: 10px;
+}
+
+.itemDescription h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.itemDescription p {
+    margin-left: 10px;
+}
