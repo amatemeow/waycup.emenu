@@ -76,7 +76,6 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: space-evenly;
 }
 
@@ -84,6 +83,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px black;
     margin: 0.5em 0;
+    min-width: 20em;
     max-width: 25em;
     height: min-content;
 }
