@@ -144,6 +144,12 @@ footer {
 
 .copyright {
     min-width: 70%;
+    padding: 0.5em;
+}
+
+.copyright p {
+    padding: 0;
+    margin: 0;
 }
 
 .links {
@@ -162,4 +168,8 @@ footer {
     width: fit-content;
     margin-left: auto;
     margin-right: 0;
+}
+
+.author {
+    opacity: 0.5;
 }
