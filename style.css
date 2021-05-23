@@ -177,3 +177,8 @@ footer {
 .author {
     opacity: 0.5;
 }
+
+.author a {
+    text-decoration: none;
+    color: inherit;
+}
