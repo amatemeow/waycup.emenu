@@ -1,5 +1,4 @@
 var call = document.getElementsByClassName("expandAddable");
-var toggleSpecial = document.getElementsByClassName("toggleAddable");
 var i;
 
 for (i = 0; i < call.length; i++) {
