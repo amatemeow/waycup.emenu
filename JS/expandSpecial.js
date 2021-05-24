@@ -4,7 +4,7 @@ var i;
 
 for (i = 0; i < call.length; i++) {
     call[i].addEventListener("click", function () {
-       this.classList.toggle("active");
+       this.classList.toggle("activeSpecial");
        var hidden = this.nextElementSibling;
        if (hidden.style.display === "flex") {
            hidden.style.display = "none";

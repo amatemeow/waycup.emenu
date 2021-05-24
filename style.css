@@ -68,6 +68,59 @@ header {
     opacity: 0.1;
 }
 
+.toggleAddable {
+    position: fixed;
+    right: 0;
+    top: 30%;
+    max-width: 90%;
+    border-radius: 10px 0 0 10px;
+    background-color: #ffcc00;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 1;
+}
+
+.expandAddable {
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+    background-color: #fc0;
+    padding: 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.expandAddable h2 {
+    margin: 0.5em;
+    writing-mode: vertical-lr;
+}
+
+.addableList {
+    width: 100%;
+    display: none;
+    overflow: hidden;
+    padding: 1em 1.5em 1em 1em;
+}
+
+.addableList ul {
+    padding: 0.5em;
+    margin: 1em 2em 1em 1em;
+}
+
+.addableList li {
+    margin: 5px 0;
+}
+
+.activeAddable {
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+}
+
 .specialContainer {
     display: flex;
     flex-direction: column;
@@ -98,7 +151,7 @@ header {
     justify-content: center;
 }
 
-.active {
+.activeSpecial {
     box-shadow: 0 5px 10px -5px rgba(0,0,0, 0.5);
     border-radius: 10px 10px 0 0;
 }
