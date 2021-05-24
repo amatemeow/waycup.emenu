@@ -68,6 +68,47 @@ header {
     opacity: 0.1;
 }
 
+.specialContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.toggleSpecial {
+    align-self: center;
+    max-width: 35em;
+    text-align: center;
+    align-items: center;
+    margin: 1em 0.5em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.expandButton {
+    cursor: pointer;
+    margin: 0;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #fc0;
+    padding: 0 1em;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    box-shadow: 0 5px 10px -5px rgba(0,0,0, 0.5);
+    border-radius: 10px 10px 0 0;
+}
+
+.hidden {
+    display: none;
+    overflow: hidden;
+    box-shadow: 0 5px 10px -5px black;
+}
+
 .mainContainer {
     width: inherit;
     min-height: min-content;
@@ -114,6 +155,24 @@ header {
     height: 100%;
 }
 
+.itemInfoStandby {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.itemPrice {
+    width: min-content;
+    margin: 1em;
+    padding: 5px 1em;
+    background-color: #fc0;
+    border-radius: 10px;
+}
+
+.itemPrice h4 {
+    margin: 0;
+}
+
 .itemName {
     background-color: white;
     border-radius: 0 10px 0 0;
@@ -123,7 +182,7 @@ header {
 
 .itemDescription {
     background-color: white;
-    /*background-color: #151515;*/
+    text-align: left;
     border-radius: 0 0 10px 10px;
     padding: 10px;
 }
@@ -155,6 +214,7 @@ footer {
     width: inherit;
     background-color: #fc0;
     padding: 5px 10px;
+    align-items: center;
 }
 
 .copyright {
