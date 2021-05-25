@@ -93,8 +93,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    animation: ease-in-out 0.5s;
-    /*transition: 0.3s;*/
+    transition: 0.3s;
 }
 
 .expandAddable h2 {
@@ -107,7 +106,7 @@ header {
     display: none;
     overflow: hidden;
     padding: 1em 1.5em 1em 1em;
-    animation: fadeIn 0.5s;
+    animation: fadeIn 2s;
 }
 
 .addableList ul {
@@ -163,7 +162,7 @@ header {
 }
 
 #wrapper {
-    animation: fadeIn 0.5s;
+    animation: fadeIn 1s;
 }
 
 @keyframes fadeIn {
