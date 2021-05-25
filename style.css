@@ -77,7 +77,8 @@ header {
     background-color: #ffcc00;
     display: flex;
     flex-direction: row-reverse;
-    z-index: 2;
+    z-index: 10;
+    animation: ease-in-out 0.5s;
 }
 
 .expandAddable {
@@ -92,6 +93,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    animation: ease-in-out 0.5s;
+    /*transition: 0.3s;*/
 }
 
 .expandAddable h2 {
@@ -104,11 +107,12 @@ header {
     display: none;
     overflow: hidden;
     padding: 1em 1.5em 1em 1em;
+    animation: fadeIn 0.5s;
 }
 
 .addableList ul {
-    padding: 0.5em;
-    margin: 1em 2em 1em 1em;
+    padding: 0 0.5em;
+    margin: 1em 2em 0 0;
 }
 
 .addableList li {
@@ -158,6 +162,18 @@ header {
     border-radius: 10px 10px 0 0;
 }
 
+#wrapper {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
 .hidden {
     display: none;
     overflow: hidden;
@@ -198,10 +214,16 @@ header {
     width: 47%;
     max-width: 20em;
     height: min-content;
+    transition: 0.3s ease-out;
 }
 
 .activeItem {
+    position: fixed;
     width: 100%;
+    z-index: 5;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 0 black;
+    transition: 0.3s;
 }
 
 .bg_image img {
