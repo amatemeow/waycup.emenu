@@ -135,6 +135,7 @@ header {
     margin: 1em 0.5em;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px -2px greenyellow;
 }
 
 .expandButton {
@@ -174,7 +175,7 @@ header {
     -webkit-flex-wrap: wrap;
     row-gap: 0;
     flex: 1 0 33%;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .expandItem {
@@ -195,7 +196,7 @@ header {
     box-shadow: 0 5px 10px -5px black;
     margin: 0.5em 0;
     width: 47%;
-    max-width: 25em;
+    max-width: 20em;
     height: min-content;
 }
 
@@ -215,7 +216,6 @@ header {
 }
 
 .itemName {
-    width: min-content;
 }
 
 .itemName h2 {
@@ -230,7 +230,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    max-width: 80%;
+    width: 80%;
     height: 100%;
 }
 
