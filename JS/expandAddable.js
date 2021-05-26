@@ -10,7 +10,8 @@ for (i = 0; i < call.length; i++) {
             hidden.style.whiteSpace = "nowrap";
         } else {
             hidden.style.display = "flex";
-            setTimeout(function () {hidden.style.whiteSpace = "normal";}, 600);
+            // setTimeout(function () {hidden.style.whiteSpace = "normal";}, 100);
+            hidden.style.whiteSpace = "normal";
         }
     });
 }
