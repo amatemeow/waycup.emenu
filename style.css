@@ -96,7 +96,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    transition: 0.3s;
+    transition: all 0.5s;
 }
 
 .expandAddable h2 {
@@ -168,6 +168,7 @@ header {
 }
 
 #wrapper {
+    transition: all 1s ease-in-out;
     animation: fadeIn 1s;
 }
 
