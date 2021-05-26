@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    position: relative;
     margin: inherit;
     width: inherit;
     min-height: inherit;
@@ -71,7 +72,8 @@ header {
 .toggleAddable {
     position: fixed;
     right: 0;
-    top: 30%;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
     max-width: 90%;
     border-radius: 10px 0 0 10px;
     background-color: #ffcc00;
@@ -79,6 +81,7 @@ header {
     flex-direction: row-reverse;
     z-index: 10;
     animation: ease-in-out 0.5s;
+    box-shadow: 0 0 10px 0 black;
 }
 
 .expandAddable {
@@ -105,8 +108,11 @@ header {
     width: 100%;
     display: none;
     overflow: hidden;
+    overflow-y: scroll;
+    max-height: 70vh;
+    white-space: nowrap;
     padding: 1em 1.5em 1em 1em;
-    animation: fadeIn 2s;
+    animation: fadeIn 1s;
 }
 
 .addableList ul {
@@ -180,6 +186,7 @@ header {
 }
 
 .mainContainer {
+    position: relative;
     width: inherit;
     min-height: min-content;
     padding: 10px;
@@ -216,11 +223,16 @@ header {
     transition: 0.3s ease-out;
 }
 
+/*Debug*/
 .activeItem {
     position: fixed;
+    max-height: 90vh;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
     width: 100%;
+    overflow: auto;
     z-index: 5;
-    margin: 0 auto;
     box-shadow: 0 0 10px 0 black;
     transition: 0.3s;
 }
