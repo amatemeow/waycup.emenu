@@ -110,13 +110,15 @@ header {
     flex-direction: column;
     overflow: hidden;
     overflow-y: scroll;
-    scrollbar-base-color: transparent;
-    scrollbar-arrow-color: transparent;
-    scrollbar-track-color: transparent;
+    -ms-overflow-style: none;
     max-height: 70vh;
     white-space: nowrap;
     padding: 1em 0 1em 1em;
     animation: fadeIn 1s;
+}
+
+.addableList::-webkit-scrollbar {
+    display: none;
 }
 
 #listBottom {
@@ -173,7 +175,7 @@ header {
     margin: 1em 0.5em;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 10px -2px greenyellow;
+    box-shadow: 0 0 10px 0 lightpink;
 }
 
 .expandButton {
@@ -251,6 +253,11 @@ header {
     max-width: 20em;
     height: min-content;
     transition: 0.3s ease-out;
+    text-align: left;
+}
+
+.seasonalItem {
+    border: 2px solid lightpink;
 }
 
 /*Debug*/
