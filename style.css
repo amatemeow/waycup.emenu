@@ -260,6 +260,20 @@ header {
     border: 2px solid lightpink;
 }
 
+.dividerTitle {
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.dividerTitle h4 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
 /*Debug*/
 .activeItem {
     position: fixed;
