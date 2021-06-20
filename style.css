@@ -301,12 +301,26 @@ header {
 }
 
 .itemName {
+    max-width: 100%;
+    background-color: white;
+    border-radius: 0 10px 0 0;
+    padding: 0 0.5em;
+    width: fit-content;
 }
 
 .itemName h2 {
     font-size: min(5vw,30px);
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.activeItemName h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
 
 .itemInfo {
@@ -336,13 +350,6 @@ header {
 
 .itemPrice h4 {
     margin: 0;
-}
-
-.itemName {
-    background-color: white;
-    border-radius: 0 10px 0 0;
-    padding: 0 0.5em;
-    width: fit-content;
 }
 
 .itemDescription {
