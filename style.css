@@ -359,13 +359,18 @@ header {
     padding: 10px 0;
 }
 
-.itemDescription h4 {
-    padding: 0;
-    margin: 0;
+.itemDescription p {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px;
 }
 
-.itemDescription p {
-    margin: 0 10px;
+.activeItemDescription p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
 
 .toggleFakeBack {
