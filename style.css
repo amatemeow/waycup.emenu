@@ -233,6 +233,7 @@ header {
 }
 
 .expandItem {
+    cursor: pointer;
     position: absolute;
     top: 0;
     left: 0;
@@ -247,7 +248,7 @@ header {
 .menuItem {
     position: relative;
     border-radius: 10px;
-    box-shadow: 0 5px 10px -5px black;
+    box-shadow: 0 0 10px 0 black;
     margin: 0.5em 0;
     width: 47%;
     max-width: 20em;
