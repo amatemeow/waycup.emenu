@@ -1,1 +1,1 @@
-# waycup.emenu.github.io
+# Электронное меню для кофейни WayCup.
