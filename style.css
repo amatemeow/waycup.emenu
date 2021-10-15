@@ -1,12 +1,23 @@
 html {
+    position: relative;
     min-width: 100%;
     min-height: 100vh;
     margin: 0;
     font-family: Arial;
-    background-color: white;
+    background-color: black;
+}
+
+html::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-image: url("Images/Initial/background.jpg");
     background-size: cover;
     background-attachment: fixed;
+    opacity: 0.5;
 }
 
 body {
